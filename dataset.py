@@ -7,7 +7,6 @@ import torchvision.transforms as transforms
 
 class C100Dataset(Dataset):
 
-    # Todo
     classes = ['apple', 'aquarium_fish', 'baby', 'bear', 'beaver', 'bed', 'bee', 'beetle', 'bicycle',
                'bottle', 'bowl', 'boy', 'bridge', 'bus', 'butterfly', 'camel', 'can', 'castle', 'caterpillar', 'cattle',
             'chair', 'chimpanzee', 'clock', 'cloud', 'cockroach', 'couch', 'crab', 'crocodile', 'cup', 'dinosaur',
@@ -63,7 +62,6 @@ if __name__ == "__main__":
     trainset = C100Dataset(train=True, transfrom=transform)
     testset = C100Dataset(train=False, transfrom=transform)
     
-    # Todo
     data_size = len(trainset)
     subtrain_size = int(0.8*data_size)
     val_size = data_size - subtrain_size
